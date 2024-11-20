@@ -130,6 +130,4 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-#Redirect after login and logout
-LOGIN_REDIRECT_URL = '/Appointment'
-LOGOUT_REDIRECT_URL = '/'
+
