@@ -40,3 +40,10 @@ class Contact(models.Model):
         return self.name
 
 
+class Member(models.Model):
+    name = models.CharField(max_length=200)
+    username = models.CharField(max_length=200)
+    password = models.CharField(max_length=20)
+
+    def __str__(self):
+        return self.name
