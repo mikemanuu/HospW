@@ -1,5 +1,6 @@
 from django import forms
-from myapp.models import Appointment,Contact
+from myapp.models import Appointment, Contact, ImageModel
+
 
 class AppointmentForm(forms.ModelForm):
     class Meta:
@@ -9,4 +10,9 @@ class AppointmentForm(forms.ModelForm):
 class ContactForm(forms.ModelForm):
     class Meta:
         model = Contact
+        fields = '__all__'
+
+class ImageUploadForm(forms.ModelForm):
+    class Meta:
+        model = ImageModel
         fields = '__all__'
